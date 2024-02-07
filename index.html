@@ -6,7 +6,31 @@
     <title>project 1</title>
 </head>
 <body>
-    <h1>i am watching You</h1>
-    <p>everyone is watching what you are doing.</p>
+    <div>
+        <h1>You are being watched</h1>
+    <p>Everyone is watching what you are doing and knows what you have done.</p>
+        <!-- Add id to image -->
+        <img id="image"
+             src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20210915115837/gfg3.png"
+             alt="GFG image" />
+    </div>
+    <button type="button" onclick="show()" id="btnID">
+        Home
+    </button>
+ 
+    <script>
+        function show() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('image')
+                .style.display = "block";
+            document.getElementById('btnID')
+                .style.display = "none";
+        }
+    </script>
+
+
+
 </body>
 </html>
